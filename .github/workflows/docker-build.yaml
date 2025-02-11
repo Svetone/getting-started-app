@@ -11,7 +11,7 @@ jobs:
       -  run: docker images
       -  run: |
           DATE_TAG=$(date +'%Y%m%d%H%M%S')
-          docker tag ${{ secrets.DOCKER_USERNAME }}/antoine_noel:22 ${{ secrets.DOCKER_USERNAME }}/antoine_noel:DATE_TAG
-      -  run: docker push ${{ secrets.DOCKER_USERNAME }}/antoine_noel:DATE_TAG
+          docker tag ${{ secrets.DOCKER_USERNAME }}/antoine_noel:22 ${{ secrets.DOCKER_USERNAME }}/antoine_noel:$DATE_TAG
+      -  run: docker push ${{ secrets.DOCKER_USERNAME }}/antoine_noel:$DATE_TAG
 
 
