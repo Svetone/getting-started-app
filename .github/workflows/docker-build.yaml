@@ -6,10 +6,9 @@ jobs:
     steps:
       -  uses: actions/checkout@v3
       -  run: ls -la
+      -  run: docker build -t antoine_noel:22
 
 
-#checkout code
-#ls
 #docker build
 #docker images
 #docker push
