@@ -4,4 +4,12 @@ jobs:
   build-docker-image:
     runs-on: ubuntu-latest
     steps:
-      -  run: ls
+      -  uses: actions/checkout@v3
+      -  run: ls -la
+
+
+#checkout code
+#ls
+#docker build
+#docker images
+#docker push
