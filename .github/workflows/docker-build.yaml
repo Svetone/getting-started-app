@@ -6,7 +6,7 @@ jobs:
     steps:
       -  uses: actions/checkout@v3
       -  run: ls -la
-      -  run: docker build -t antoine_noel:22
+      -  run: docker build -t my-app .
 
 
 #docker build
