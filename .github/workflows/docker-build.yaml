@@ -7,7 +7,7 @@ jobs:
       -  uses: actions/checkout@v3
       -  run: ls -la
       -  run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-      -  run: docker build -t ${{ secrets.DOCKER_USERNAME }}/antoine_noel:22 -f getting-started-app/Dockerfile .
+      -  run: docker build -t stual025/antoine_noel:22 .
 
 
 #docker build
